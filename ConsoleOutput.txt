@@ -1,0 +1,499 @@
+mvn test
+[INFO] Scanning for projects...
+[WARNING]
+[WARNING] Some problems were encountered while building the effective model for org.example:result-copy-service:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: jakarta.ws.rs:jakarta.ws.rs-api:jar -> duplicate declaration of
+ version ${jakarta.version} @ line 24, column 21
+[WARNING]
+[WARNING] Some problems were encountered while building the effective model for org.example:result-copy:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter:jar is either LATEST or RELEASE (both of them are being deprecated) @ li
+ne 28, column 22
+[WARNING]
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING]
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING]
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] Result-Copy-Reactor                                                [pom]
+[INFO] result-copy                                                        [jar]
+[INFO] result-copy-service                                                [jar]
+[INFO] result-copy-rest                                                   [jar]
+[INFO] result-copy-war Maven Webapp                                       [war]
+[INFO]
+[INFO] ------------------< org.example:Result-Copy-Reactor >-------------------
+[INFO] Building Result-Copy-Reactor 1.0-SNAPSHOT                          [1/5]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] ----------------------< org.example:result-copy >-----------------------
+[INFO] Building result-copy 1.0-SNAPSHOT                                  [2/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/maven-metadata.xml
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/maven-metadata.xml (1.1 kB at 412 B/s)
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ result-copy ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\AC089545\Downloads\result-copy-reactor_07072021\result-copy-reactor\result-copy\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ result-copy ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 11 source files to C:\Users\AC089545\Downloads\result-copy-reactor_07072021\result-copy-reactor\result-copy\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ result-copy ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\AC089545\Downloads\result-copy-reactor_07072021\result-copy-reactor\result-copy\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ result-copy ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 11 source files to C:\Users\AC089545\Downloads\result-copy-reactor_07072021\result-copy-reactor\result-copy\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ result-copy ---
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.resultcopy.BabyRequestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in com.resultcopy.BabyRequestTest
+[INFO] Running com.resultcopy.BabyResultResponseTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.resultcopy.BabyResultResponseTest
+[INFO] Running com.resultcopy.CategoryRequestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.resultcopy.CategoryRequestTest
+[INFO] Running com.resultcopy.CategoryResponseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.CategoryResponseTest
+[INFO] Running com.resultcopy.ChildResponseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.resultcopy.ChildResponseTest
+[INFO] Running com.resultcopy.ChildResultResponseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.ChildResultResponseTest
+[INFO] Running com.resultcopy.PatientDetailsResponseTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.resultcopy.PatientDetailsResponseTest
+[INFO] Running com.resultcopy.PatientResponseTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.resultcopy.PatientResponseTest
+[INFO] Running com.resultcopy.PatientResultResponseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.resultcopy.PatientResultResponseTest
+[INFO] Running com.resultcopy.ResultRequestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.resultcopy.ResultRequestTest
+[INFO] Running com.resultcopy.ResultResponseTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.ResultResponseTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] ------------------< org.example:result-copy-service >-------------------
+[INFO] Building result-copy-service 1.0-SNAPSHOT                          [3/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.pom (18 kB at 28 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.9.3/byte-buddy-1.9.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.9.3/byte-buddy-1.9.3.pom (10 kB at 20 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.9.3/byte-buddy-parent-1.9.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.9.3/byte-buddy-parent-1.9.3.pom (34 kB at 62 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.9.3/byte-buddy-agent-1.9.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.9.3/byte-buddy-agent-1.9.3.pom (6.0 kB at 9.9 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/vintage/junit-vintage-engine/5.4.2/junit-vintage-engine-5.4.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/vintage/junit-vintage-engine/5.4.2/junit-vintage-engine-5.4.2.pom (2.4 kB at 5.0
+ kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.pom (2.4 kB at
+4.8 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.pom (2.4 kB at 5.3
+ kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4/2.0.2/powermock-module-junit4-2.0.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4/2.0.2/powermock-module-junit4-2.0.2.pom (7.3 kB at 1
+8 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4-common/2.0.2/powermock-module-junit4-common-2.0.2.p
+om
+Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4-common/2.0.2/powermock-module-junit4-common-2.0.2.po
+m (7.5 kB at 13 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.pom (7.2 kB at 12 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-core/2.0.2/powermock-core-2.0.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-core/2.0.2/powermock-core-2.0.2.pom (7.4 kB at 12 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-mockito2/2.0.2/powermock-api-mockito2-2.0.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-mockito2/2.0.2/powermock-api-mockito2-2.0.2.pom (7.3 kB at 15
+kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-support/2.0.2/powermock-api-support-2.0.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-support/2.0.2/powermock-api-support-2.0.2.pom (7.0 kB at 17 kB
+/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/2.23.0/mockito-core-2.23.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/2.23.0/mockito-core-2.23.0.pom (17 kB at 34 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.9.3/byte-buddy-agent-1.9.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.9.3/byte-buddy-1.9.3.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.9.3/byte-buddy-agent-1.9.3.jar (43 kB at 47 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/vintage/junit-vintage-engine/5.4.2/junit-vintage-engine-5.4.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar (89 kB at
+ 84 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar (134 kB at 120 kB/s)
+
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/vintage/junit-vintage-engine/5.4.2/junit-vintage-engine-5.4.2.jar (66 kB at 49 k
+B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4/2.0.2/powermock-module-junit4-2.0.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar (565 kB at 343 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4-common/2.0.2/powermock-module-junit4-common-2.0.2.j
+ar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar (142 kB at
+81 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4-common/2.0.2/powermock-module-junit4-common-2.0.2.ja
+r (18 kB at 8.1 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-core/2.0.2/powermock-core-2.0.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.jar (66 kB at 30 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-mockito2/2.0.2/powermock-api-mockito2-2.0.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-mockito2/2.0.2/powermock-api-mockito2-2.0.2.jar (88 kB at 33 k
+B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-support/2.0.2/powermock-api-support-2.0.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-core/2.0.2/powermock-core-2.0.2.jar (201 kB at 71 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-support/2.0.2/powermock-api-support-2.0.2.jar (22 kB at 7.0 kB
+/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.9.3/byte-buddy-1.9.3.jar (3.2 MB at 1.0 MB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4/2.0.2/powermock-module-junit4-2.0.2.jar (48 kB at 13
+ kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar (178 kB at 48
+kB/s)
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ result-copy-service ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ result-copy-service ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 12 source files to C:\Users\AC089545\Downloads\result-copy-reactor_07072021\result-copy-reactor\result-copy-service\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ result-copy-service ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\AC089545\Downloads\result-copy-reactor_07072021\result-copy-reactor\result-copy-service\src\test\res
+ources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ result-copy-service ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 7 source files to C:\Users\AC089545\Downloads\result-copy-reactor_07072021\result-copy-reactor\result-copy-service\target\test-classes
+[WARNING] /C:/Users/AC089545/Downloads/result-copy-reactor_07072021/result-copy-reactor/result-copy-service/src/test/java/com/resultcopy/service/impl/Pa
+tientDAOImplTest.java: Some input files use or override a deprecated API.
+[WARNING] /C:/Users/AC089545/Downloads/result-copy-reactor_07072021/result-copy-reactor/result-copy-service/src/test/java/com/resultcopy/service/impl/Pa
+tientDAOImplTest.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ result-copy-service ---
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.resultcopy.service.ConnectionFactoryTest
+[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.356 s <<< FAILURE! - in com.resultcopy.service.ConnectionFactoryTest
+[ERROR] testConnection  Time elapsed: 0.008 s  <<< ERROR!
+org.powermock.api.mockito.ClassNotPreparedException:
+
+
+[Ljava.lang.Object;@663f237a
+The class java.sql.DriverManager not prepared for test.
+
+        at com.resultcopy.service.ConnectionFactoryTest.testConnection(ConnectionFactoryTest.java:35)
+
+[INFO] Running com.resultcopy.service.impl.BabyResultDAOImplTest
+Baby Result Post Request SQL : insert into baby_result(child_id,value,category_name,result_name,date_time) Values ( 11 ,  'TEST' , 'CATEGORY' , 'TEST_DI
+SPLAY_NAME' , curtime() )
+java.sql.SQLException
+        at com.resultcopy.service.impl.BabyResultDAOImpl.createBabyResult(BabyResultDAOImpl.java:70)
+        at com.resultcopy.service.impl.BabyResultDAOImplTest.testExceptionCreateBabyResult(BabyResultDAOImplTest.java:108)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:79)
+        at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:85)
+        at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:39)
+        at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+        at org.mockito.runners.MockitoJUnitRunner.run(MockitoJUnitRunner.java:53)
+        at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+        at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+        at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+        at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+        at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+        at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+        at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+        at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+        at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+        at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+        at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:430)
+        at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+        at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+        at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+        at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:142)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:117)
+        at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+        at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+SQL : SELECT * FROM Baby_Result WHERE CHILD_ID =  12
+SQL : SELECT * FROM Baby_Result WHERE CHILD_ID =  12
+java.sql.SQLException
+        at com.resultcopy.service.impl.BabyResultDAOImpl.getBabyPatientByChildId(BabyResultDAOImpl.java:41)
+        at com.resultcopy.service.impl.BabyResultDAOImplTest.testExceptionGetBabyPatientByChildId(BabyResultDAOImplTest.java:84)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:79)
+        at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:85)
+        at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:39)
+        at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
+        at org.mockito.runners.MockitoJUnitRunner.run(MockitoJUnitRunner.java:53)
+        at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+        at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+        at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+        at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+        at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+        at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+        at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+        at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+        at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+        at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+        at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:430)
+        at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+        at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+        at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+        at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:142)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:117)
+        at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+        at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Baby Result Post Request SQL : insert into baby_result(child_id,value,category_name,result_name,date_time) Values ( 11 ,  'TEST' , 'CATEGORY' , 'TEST_DI
+SPLAY_NAME' , curtime() )
+[ERROR] Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.658 s <<< FAILURE! - in com.resultcopy.service.impl.BabyResultDAOImplTest
+[ERROR] unnecessary Mockito stubbings  Time elapsed: 0 s  <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException:
+
+Unnecessary stubbings detected in test class: BabyResultDAOImplTest
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.resultcopy.service.impl.BabyResultDAOImplTest.getChildValueById(BabyResultDAOImplTest.java:129)
+  2. -> at com.resultcopy.service.impl.BabyResultDAOImplTest.testGetBabyPatientByChildId(BabyResultDAOImplTest.java:51)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+
+[INFO] Running com.resultcopy.service.impl.CategoryDAOImplTest
+[ERROR] Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in com.resultcopy.service.impl.CategoryDAOImplTest
+[ERROR] unnecessary Mockito stubbings  Time elapsed: 0 s  <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException:
+
+Unnecessary stubbings detected in test class: CategoryDAOImplTest
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.resultcopy.service.impl.CategoryDAOImplTest.testCategoryDAOImpl(CategoryDAOImplTest.java:49)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+
+[INFO] Running com.resultcopy.service.impl.ChildDAOImplTest
+SQL :SELECT c.child_id ,c.first_name,c.last_name,c.mrn,c.fin FROM patient p ,Child c WHERE p.PATIENT_ID = c.Patient_Id  AND p.PATIENT_ID = 1
+SQL :SELECT c.child_id ,c.first_name,c.last_name,c.mrn,c.fin FROM patient p ,Child c WHERE p.PATIENT_ID = c.Patient_Id  AND p.PATIENT_ID = 1
+[ERROR] Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! - in com.resultcopy.service.impl.ChildDAOImplTest
+[ERROR] unnecessary Mockito stubbings  Time elapsed: 0 s  <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException:
+
+Unnecessary stubbings detected in test class: ChildDAOImplTest
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.resultcopy.service.impl.ChildDAOImplTest.getPatientById(ChildDAOImplTest.java:52)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+
+[INFO] Running com.resultcopy.service.impl.PatientDAOImplTest
+java.sql.SQLException
+        at com.resultcopy.service.impl.PatientDAOImpl.getPatientById(PatientDAOImpl.java:38)
+        at com.resultcopy.service.impl.PatientDAOImplTest.testException(PatientDAOImplTest.java:69)
+        at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68)
+        at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89)
+        at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97)
+        at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87)
+        at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50)
+        at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+        at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+        at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+        at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+        at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+        at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+        at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+        at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+        at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+        at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+        at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+        at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+        at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:430)
+        at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+        at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+        at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+        at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:142)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:117)
+        at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+        at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.976 s - in com.resultcopy.service.impl.PatientDAOImplTest
+[INFO] Running com.resultcopy.service.impl.ResultDAOImplTest
+java.sql.SQLException
+        at com.resultcopy.service.impl.ResultDAOImpl.getChildValueById(ResultDAOImpl.java:71)
+        at com.resultcopy.service.impl.ResultDAOImplTest.testExceptionGetChildValueById(ResultDAOImplTest.java:71)
+        at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68)
+        at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89)
+        at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97)
+        at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87)
+        at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50)
+        at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+        at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+        at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+        at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+        at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+        at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+        at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+        at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+        at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+        at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+        at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+        at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+        at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:430)
+        at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+        at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+        at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+        at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:142)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:117)
+        at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+        at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+java.sql.SQLException
+        at com.resultcopy.service.impl.ResultDAOImpl.getCategories(ResultDAOImpl.java:42)
+        at com.resultcopy.service.impl.ResultDAOImplTest.testExceptionGetCategories(ResultDAOImplTest.java:63)
+        at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:68)
+        at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:89)
+        at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:97)
+        at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:87)
+        at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:50)
+        at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+        at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+        at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+        at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+        at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+        at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+        at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+        at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+        at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+        at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+        at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+        at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+        at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:430)
+        at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+        at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+        at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+        at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:142)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:117)
+        at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+        at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.17 s - in com.resultcopy.service.impl.ResultDAOImplTest
+[INFO] Running com.resultcopy.service.serviceimpl.PatientServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.693 s - in com.resultcopy.service.serviceimpl.PatientServiceImplTest
+[INFO]
+[INFO] Results:
+[INFO]
+[ERROR] Errors: 
+[ERROR]   ConnectionFactoryTest.testConnection:35 » ClassNotPrepared 
+
+[Ljava.lang.Obj...
+[ERROR]   BabyResultDAOImplTest » UnnecessaryStubbing 
+Unnecessary stubbings detected in...
+[ERROR]   CategoryDAOImplTest » UnnecessaryStubbing 
+Unnecessary stubbings detected in t...
+[ERROR]   ChildDAOImplTest » UnnecessaryStubbing 
+Unnecessary stubbings detected in test...
+[INFO]
+[ERROR] Tests run: 23, Failures: 0, Errors: 4, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Result-Copy-Reactor 1.0-SNAPSHOT:
+[INFO]
+[INFO] Result-Copy-Reactor ................................ SUCCESS [  0.011 s]
+[INFO] result-copy ........................................ SUCCESS [  9.775 s]
+[INFO] result-copy-service ................................ FAILURE [ 21.663 s]
+[INFO] result-copy-rest ................................... SKIPPED
+[INFO] result-copy-war Maven Webapp ....................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  31.701 s
+[INFO] Finished at: 2021-07-08T10:05:45+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project result-copy-service: There are test
+failures.
+[ERROR]
+[ERROR] Please refer to C:\Users\AC089545\Downloads\result-copy-reactor_07072021\result-copy-reactor\result-copy-service\target\surefire-reports for the
+ individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR]
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :result-copy-service
+
