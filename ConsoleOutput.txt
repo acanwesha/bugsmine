@@ -1,5 +1,4 @@
-
-       Started by GitHub push by ac089545
+Started by GitHub push by ac089545
 Started by GitHub push by ac089545
 Running as SYSTEM
 Building remotely on facjenkinsw170 (JAVA NODE WINDOWS) in workspace c:/jenkins/workspace/DEVACDMY-35436
@@ -15,21 +14,18 @@ remote: Compressing objects
 Receiving objects
 Resolving deltas
 Avoid second fetch
-Checking out Revision 23b0e5cda31dc98e0c9233e008370f1e963d8f96 (refs/remotes/origin/DEVACDMY-35436)
-Commit message: "tests"
+Checking out Revision 0ebdc96c9bdd3b43836d9488e2b7178a60de3ff5 (refs/remotes/origin/DEVACDMY-35436)
+Commit message: "test1"
 Parsing POMs
 Modules changed, recalculating dependency graph
-Established TCP socket on 56134
+Established TCP socket on 49669
 maven35-agent.jar already up to date
 maven35-interceptor.jar already up to date
 maven3-interceptor-commons.jar already up to date
-[DEVACDMY-35436] $ c:/jenkins/tools/hudson.model.JDK/JDK9/bin/java -cp c:/jenkins/maven35-agent.jar;c:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6\boot\plexus-classworlds-2.5.2.jar;c:/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.6/conf/logging jenkins.maven3.agent.Maven35Main c:/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.6 C:\jenkins\slave.jar c:/jenkins/maven35-interceptor.jar c:/jenkins/maven3-interceptor-commons.jar 56134
+[DEVACDMY-35436] $ c:/jenkins/tools/hudson.model.JDK/JDK9/bin/java -cp c:/jenkins/maven35-agent.jar;c:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6\boot\plexus-classworlds-2.5.2.jar;c:/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.6/conf/logging jenkins.maven3.agent.Maven35Main c:/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.6 C:\jenkins\slave.jar c:/jenkins/maven35-interceptor.jar c:/jenkins/maven3-interceptor-commons.jar 49669
 <===[JENKINS REMOTING CAPACITY]===>channel started
 Executing Maven:  -B -f c:/jenkins/workspace/DEVACDMY-35436/pom.xml clean install
 [INFO] Scanning for projects...
-[WARNING] 
-[WARNING] Some problems were encountered while building the effective model for org.example:result-copy-rest:jar:1.0-SNAPSHOT
-[WARNING] 'parent.relativePath' of POM org.example:result-copy-rest:[unknown-version] (C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\pom.xml) points at com.cerner.wh:result-copy instead of org.example:Result-Copy-Reactor, please verify your project structure @ org.example:result-copy-rest:[unknown-version], C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\pom.xml, line 5, column 13
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for com.cerner.wh:result-copy-service:jar:1.0-SNAPSHOT
 [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: jakarta.ws.rs:jakarta.ws.rs-api:jar -> duplicate declaration of version ${jakarta.version} @ com.cerner.wh:result-copy-service:[unknown-version], C:\jenkins\workspace\DEVACDMY-35436\result-copy-service\pom.xml, line 24, column 21
@@ -42,150 +38,18 @@ Executing Maven:  -B -f c:/jenkins/workspace/DEVACDMY-35436/pom.xml clean instal
 [HUDSON] Collecting dependencies info
 [HUDSON] Collecting dependencies info
 [HUDSON] Collecting dependencies info
-[HUDSON] Collecting dependencies info
-[INFO] ------------------------------------------------------------------------
+[HUDSON] Collecting dependencies info[INFO] ------------------------------------------------------------------------
 [INFO] Reactor Build Order:
 [INFO] 
-[INFO] result-copy-rest                                                   [jar]
+
 [INFO] result-copy                                                        [pom]
 [INFO] result-copy-response                                               [jar]
 [INFO] result-copy-service                                                [jar]
+[INFO] result-copy-rest                                                   [jar]
 [INFO] result-copy-war Maven Webapp                                       [war]
 [INFO] 
-[INFO] --------------------< org.example:result-copy-rest >--------------------
-[INFO] Building result-copy-rest 1.0-SNAPSHOT                             [1/5]
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ result-copy-rest ---
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ result-copy-rest ---
-[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\src\main\resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ result-copy-rest ---
-[INFO] Changes detected - recompiling the module!
-[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
-[INFO] Compiling 23 source files to C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\target\classes
-[WARNING] /C:/jenkins/workspace/DEVACDMY-35436/result-copy-rest/src/main/java/com/resultcopy/rest/api/RFC3339DateFormat.java: C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\src\main\java\com\resultcopy\rest\api\RFC3339DateFormat.java uses or overrides a deprecated API.
-[WARNING] /C:/jenkins/workspace/DEVACDMY-35436/result-copy-rest/src/main/java/com/resultcopy/rest/api/RFC3339DateFormat.java: Recompile with -Xlint:deprecation for details.
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ result-copy-rest ---
-[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\src\test\resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ result-copy-rest ---
-[INFO] Changes detected - recompiling the module!
-[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
-[INFO] Compiling 16 source files to C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\target\test-classes
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ result-copy-rest ---
-[INFO] 
-[INFO] -------------------------------------------------------
-[INFO]  T E S T S
-[INFO] -------------------------------------------------------
-
- +-------------------------------------------------------------------------------+
- | WARNING:                                                                      |
- | The junit-platform-surefire-provider has been deprecated and is scheduled to  |
- | be removed in JUnit Platform 1.4. Please use the built-in support in Maven    |
- | Surefire >= 2.22.0 instead.                                                   |
- | » https://junit.org/junit5/docs/current/user-guide/#running-tests-build-maven |
- +-------------------------------------------------------------------------------+
-
-[INFO] Running com.resultcopy.rest.api.ApiExceptionTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.333 s - in com.resultcopy.rest.api.ApiExceptionTest
-[INFO] Running com.resultcopy.rest.api.ApiResponseMessageTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.resultcopy.rest.api.ApiResponseMessageTest
-[INFO] Running com.resultcopy.rest.api.impl.CopyResultsApiServiceImplTest
-[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.309 s <<< FAILURE! - in com.resultcopy.rest.api.impl.CopyResultsApiServiceImplTest
-[ERROR] testCopyResultsPost  Time elapsed: 4.307 s  <<< ERROR!
-java.lang.RuntimeException: Error connecting to the database
-	at com.resultcopy.rest.api.impl.CopyResultsApiServiceImplTest.testCopyResultsPost(CopyResultsApiServiceImplTest.java:47)
-Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
-Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.resultcopy.rest.api.impl.CopyResultsApiServiceImplTest.testCopyResultsPost(CopyResultsApiServiceImplTest.java:47)
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
-Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.resultcopy.rest.api.impl.CopyResultsApiServiceImplTest.testCopyResultsPost(CopyResultsApiServiceImplTest.java:47)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at com.resultcopy.rest.api.impl.CopyResultsApiServiceImplTest.testCopyResultsPost(CopyResultsApiServiceImplTest.java:47)
-
-[INFO] Running com.resultcopy.rest.api.NotFoundExceptionTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.rest.api.NotFoundExceptionTest
-[INFO] Running com.resultcopy.rest.api.PatientResultsApiTest
-[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.003 s <<< FAILURE! - in com.resultcopy.rest.api.PatientResultsApiTest
-[ERROR] testPatientResultsPatientId  Time elapsed: 6 s  <<< ERROR!
-java.lang.RuntimeException: Error connecting to the database
-	at com.resultcopy.rest.api.PatientResultsApiTest.testPatientResultsPatientId(PatientResultsApiTest.java:28)
-Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
-Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.resultcopy.rest.api.PatientResultsApiTest.testPatientResultsPatientId(PatientResultsApiTest.java:28)
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
-Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.resultcopy.rest.api.PatientResultsApiTest.testPatientResultsPatientId(PatientResultsApiTest.java:28)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at com.resultcopy.rest.api.PatientResultsApiTest.testPatientResultsPatientId(PatientResultsApiTest.java:28)
-
-[INFO] Running com.resultcopy.rest.model.BabyResultTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.rest.model.BabyResultTest
-[INFO] Running com.resultcopy.rest.model.CategoryPostResultTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.rest.model.CategoryPostResultTest
-[INFO] Running com.resultcopy.rest.model.CategoryPostTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.rest.model.CategoryPostTest
-[INFO] Running com.resultcopy.rest.model.CategoryTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.resultcopy.rest.model.CategoryTest
-[INFO] Running com.resultcopy.rest.model.ChildTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.resultcopy.rest.model.ChildTest
-[INFO] Running com.resultcopy.rest.model.PatientDetailsTest
-[ERROR] Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! - in com.resultcopy.rest.model.PatientDetailsTest
-[ERROR] testPatientDetailsDateTime  Time elapsed: 0 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <1625681412276> but was: <1625681412275>
-	at com.resultcopy.rest.model.PatientDetailsTest.testPatientDetailsDateTime(PatientDetailsTest.java:59)
-
-[INFO] Running com.resultcopy.rest.model.PatientResultTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.rest.model.PatientResultTest
-[INFO] Running com.resultcopy.rest.model.PatientTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.rest.model.PatientTest
-[INFO] Running com.resultcopy.rest.model.ResultTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.resultcopy.rest.model.ResultTest
-[INFO] 
-[INFO] Results:
-[INFO] 
-[ERROR] Failures: 
-[ERROR]   PatientDetailsTest.testPatientDetailsDateTime:59 expected: <1625681412276> but was: <1625681412275>
-[ERROR] Errors: 
-[ERROR]   PatientResultsApiTest.testPatientResultsPatientId:28 » Runtime Error connectin...
-[ERROR]   CopyResultsApiServiceImplTest.testCopyResultsPost:47 » Runtime Error connectin...
-[INFO] 
-[ERROR] Tests run: 91, Failures: 1, Errors: 2, Skipped: 0
-[INFO] 
-[ERROR] There are test failures.
-
-Please refer to C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\target\surefire-reports for the individual test results.
-Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
-[JENKINS] Recording test results
-[INFO] 
-[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ result-copy-rest ---
-[INFO] Building jar: C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\target\result-copy-rest-1.0-SNAPSHOT.jar
-[INFO] 
-[INFO] --- maven-install-plugin:2.4:install (default-install) @ result-copy-rest ---
-[INFO] Installing C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\target\result-copy-rest-1.0-SNAPSHOT.jar to C:\Windows\system32\config\systemprofile\.m2\repository\org\example\result-copy-rest\1.0-SNAPSHOT\result-copy-rest-1.0-SNAPSHOT.jar
-[INFO] Installing C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\pom.xml to C:\Windows\system32\config\systemprofile\.m2\repository\org\example\result-copy-rest\1.0-SNAPSHOT\result-copy-rest-1.0-SNAPSHOT.pom
-Started calculate disk usage of build
-Finished Calculation of disk usage of build in 0 seconds
-Started calculate disk usage of workspace
-Finished Calculation of disk usage of workspace in 0 seconds
-[INFO] 
 [INFO] ---------------------< com.cerner.wh:result-copy >----------------------
-[INFO] Building result-copy 1.0-SNAPSHOT                                  [2/5]
+[INFO] Building result-copy 1.0-SNAPSHOT                                  [1/5]
 [INFO] --------------------------------[ pom ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ result-copy ---
@@ -198,7 +62,7 @@ Started calculate disk usage of workspace
 Finished Calculation of disk usage of workspace in 0 seconds
 [INFO] 
 [INFO] -----------------< com.cerner.wh:result-copy-response >-----------------
-[INFO] Building result-copy-response 1.0-SNAPSHOT                         [3/5]
+[INFO] Building result-copy-response 1.0-SNAPSHOT                         [2/5]
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ result-copy-response ---
@@ -227,27 +91,27 @@ Finished Calculation of disk usage of workspace in 0 seconds
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.resultcopy.BabyRequestTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in com.resultcopy.BabyRequestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.resultcopy.BabyRequestTest
 [INFO] Running com.resultcopy.BabyResultResponseTest
 [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.BabyResultResponseTest
 [INFO] Running com.resultcopy.CategoryRequestTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.CategoryRequestTest
 [INFO] Running com.resultcopy.CategoryResponseTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.resultcopy.CategoryResponseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.CategoryResponseTest
 [INFO] Running com.resultcopy.ChildResponseTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.resultcopy.ChildResponseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.resultcopy.ChildResponseTest
 [INFO] Running com.resultcopy.ChildResultResponseTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.ChildResultResponseTest
 [INFO] Running com.resultcopy.PatientDetailsResponseTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.PatientDetailsResponseTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.resultcopy.PatientDetailsResponseTest
 [INFO] Running com.resultcopy.PatientResponseTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.resultcopy.PatientResponseTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.PatientResponseTest
 [INFO] Running com.resultcopy.PatientResultResponseTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.PatientResultResponseTest
 [INFO] Running com.resultcopy.ResultRequestTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.resultcopy.ResultRequestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.ResultRequestTest
 [INFO] Running com.resultcopy.ResultResponseTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.resultcopy.ResultResponseTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.ResultResponseTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -267,7 +131,7 @@ Started calculate disk usage of workspace
 Finished Calculation of disk usage of workspace in 0 seconds
 [INFO] 
 [INFO] -----------------< com.cerner.wh:result-copy-service >------------------
-[INFO] Building result-copy-service 1.0-SNAPSHOT                          [4/5]
+[INFO] Building result-copy-service 1.0-SNAPSHOT                          [3/5]
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ result-copy-service ---
@@ -296,17 +160,17 @@ Finished Calculation of disk usage of workspace in 0 seconds
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.resultcopy.service.impl.BabyResultDAOImplTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.59 s - in com.resultcopy.service.impl.BabyResultDAOImplTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.602 s - in com.resultcopy.service.impl.BabyResultDAOImplTest
 [INFO] Running com.resultcopy.service.impl.CategoryDAOImplTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.service.impl.CategoryDAOImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s - in com.resultcopy.service.impl.CategoryDAOImplTest
 [INFO] Running com.resultcopy.service.impl.ChildDAOImplTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.service.impl.ChildDAOImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 s - in com.resultcopy.service.impl.ChildDAOImplTest
 [INFO] Running com.resultcopy.service.impl.PatientDAOImplTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.service.impl.PatientDAOImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s - in com.resultcopy.service.impl.PatientDAOImplTest
 [INFO] Running com.resultcopy.service.impl.ResultDAOImplTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.service.impl.ResultDAOImplTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 s - in com.resultcopy.service.impl.ResultDAOImplTest
 [INFO] Running com.resultcopy.service.serviceimpl.PatientServiceImplTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.resultcopy.service.serviceimpl.PatientServiceImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in com.resultcopy.service.serviceimpl.PatientServiceImplTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -320,6 +184,176 @@ Finished Calculation of disk usage of workspace in 0 seconds
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ result-copy-service ---
 [INFO] Installing C:\jenkins\workspace\DEVACDMY-35436\result-copy-service\target\result-copy-service-1.0-SNAPSHOT.jar to C:\Windows\system32\config\systemprofile\.m2\repository\com\cerner\wh\result-copy-service\1.0-SNAPSHOT\result-copy-service-1.0-SNAPSHOT.jar
 [INFO] Installing C:\jenkins\workspace\DEVACDMY-35436\result-copy-service\pom.xml to C:\Windows\system32\config\systemprofile\.m2\repository\com\cerner\wh\result-copy-service\1.0-SNAPSHOT\result-copy-service-1.0-SNAPSHOT.pom
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+[INFO] 
+[INFO] -------------------< com.cerner.wh:result-copy-rest >-------------------
+[INFO] Building result-copy-rest 1.0-SNAPSHOT                             [4/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/vintage/junit-vintage-engine/5.4.2/junit-vintage-engine-5.4.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/vintage/junit-vintage-engine/5.4.2/junit-vintage-engine-5.4.2.pom (2.4 kB at 5.6 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4/2.0.2/powermock-module-junit4-2.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4/2.0.2/powermock-module-junit4-2.0.2.pom (7.3 kB at 204 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4-common/2.0.2/powermock-module-junit4-common-2.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4-common/2.0.2/powermock-module-junit4-common-2.0.2.pom (7.5 kB at 235 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.pom (7.2 kB at 205 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-core/2.0.2/powermock-core-2.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-core/2.0.2/powermock-core-2.0.2.pom (7.4 kB at 223 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-mockito2/2.0.2/powermock-api-mockito2-2.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-mockito2/2.0.2/powermock-api-mockito2-2.0.2.pom (7.3 kB at 174 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-support/2.0.2/powermock-api-support-2.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-support/2.0.2/powermock-api-support-2.0.2.pom (7.0 kB at 184 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/2.23.0/mockito-core-2.23.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/2.23.0/mockito-core-2.23.0.pom (17 kB at 428 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4/2.0.2/powermock-module-junit4-2.0.2.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-core/2.0.2/powermock-core-2.0.2.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4-common/2.0.2/powermock-module-junit4-common-2.0.2.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/vintage/junit-vintage-engine/5.4.2/junit-vintage-engine-5.4.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4/2.0.2/powermock-module-junit4-2.0.2.jar (48 kB at 220 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-mockito2/2.0.2/powermock-api-mockito2-2.0.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-mockito2/2.0.2/powermock-api-mockito2-2.0.2.jar (88 kB at 312 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-support/2.0.2/powermock-api-support-2.0.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-core/2.0.2/powermock-core-2.0.2.jar (201 kB at 528 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-api-support/2.0.2/powermock-api-support-2.0.2.jar (22 kB at 55 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.jar (66 kB at 144 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/vintage/junit-vintage-engine/5.4.2/junit-vintage-engine-5.4.2.jar (66 kB at 142 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-module-junit4-common/2.0.2/powermock-module-junit4-common-2.0.2.jar (18 kB at 33 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ result-copy-rest ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ result-copy-rest ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ result-copy-rest ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 23 source files to C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\target\classes
+[WARNING] /C:/jenkins/workspace/DEVACDMY-35436/result-copy-rest/src/main/java/com/resultcopy/rest/api/RFC3339DateFormat.java: C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\src\main\java\com\resultcopy\rest\api\RFC3339DateFormat.java uses or overrides a deprecated API.
+[WARNING] /C:/jenkins/workspace/DEVACDMY-35436/result-copy-rest/src/main/java/com/resultcopy/rest/api/RFC3339DateFormat.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ result-copy-rest ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ result-copy-rest ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 16 source files to C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\target\test-classes
+[WARNING] /C:/jenkins/workspace/DEVACDMY-35436/result-copy-rest/src/test/java/com/resultcopy/rest/api/impl/PatientResultsApiServiceImplTest.java: Some input files use or override a deprecated API.
+[WARNING] /C:/jenkins/workspace/DEVACDMY-35436/result-copy-rest/src/test/java/com/resultcopy/rest/api/impl/PatientResultsApiServiceImplTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ result-copy-rest ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.resultcopy.rest.api.impl.PatientResultsApiServiceImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.876 s - in com.resultcopy.rest.api.impl.PatientResultsApiServiceImplTest
+[INFO] Running com.resultcopy.rest.api.ApiExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in com.resultcopy.rest.api.ApiExceptionTest
+[INFO] Running com.resultcopy.rest.api.ApiResponseMessageTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in com.resultcopy.rest.api.ApiResponseMessageTest
+[INFO] Running com.resultcopy.rest.api.CopyResultsApiTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.454 s <<< FAILURE! - in com.resultcopy.rest.api.CopyResultsApiTest
+[ERROR] testCopyResultsPost  Time elapsed: 4.454 s  <<< ERROR!
+java.lang.RuntimeException: Error connecting to the database
+	at com.resultcopy.rest.api.CopyResultsApiTest.testCopyResultsPost(CopyResultsApiTest.java:50)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.resultcopy.rest.api.CopyResultsApiTest.testCopyResultsPost(CopyResultsApiTest.java:50)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.resultcopy.rest.api.CopyResultsApiTest.testCopyResultsPost(CopyResultsApiTest.java:50)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.resultcopy.rest.api.CopyResultsApiTest.testCopyResultsPost(CopyResultsApiTest.java:50)
+
+[INFO] Running com.resultcopy.rest.api.impl.CopyResultsApiServiceImplTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.946 s <<< FAILURE! - in com.resultcopy.rest.api.impl.CopyResultsApiServiceImplTest
+[ERROR] testCopyResultsPost  Time elapsed: 5.945 s  <<< ERROR!
+java.lang.RuntimeException: Error connecting to the database
+	at com.resultcopy.rest.api.impl.CopyResultsApiServiceImplTest.testCopyResultsPost(CopyResultsApiServiceImplTest.java:50)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.resultcopy.rest.api.impl.CopyResultsApiServiceImplTest.testCopyResultsPost(CopyResultsApiServiceImplTest.java:50)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.resultcopy.rest.api.impl.CopyResultsApiServiceImplTest.testCopyResultsPost(CopyResultsApiServiceImplTest.java:50)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.resultcopy.rest.api.impl.CopyResultsApiServiceImplTest.testCopyResultsPost(CopyResultsApiServiceImplTest.java:50)
+
+[INFO] Running com.resultcopy.rest.api.NotFoundExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.resultcopy.rest.api.NotFoundExceptionTest
+[INFO] Running com.resultcopy.rest.api.PatientResultsApiTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.094 s <<< FAILURE! - in com.resultcopy.rest.api.PatientResultsApiTest
+[ERROR] testPatientResultsPatientId  Time elapsed: 8.092 s  <<< ERROR!
+java.lang.RuntimeException: Error connecting to the database
+	at com.resultcopy.rest.api.PatientResultsApiTest.testPatientResultsPatientId(PatientResultsApiTest.java:29)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.resultcopy.rest.api.PatientResultsApiTest.testPatientResultsPatientId(PatientResultsApiTest.java:29)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.resultcopy.rest.api.PatientResultsApiTest.testPatientResultsPatientId(PatientResultsApiTest.java:29)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.resultcopy.rest.api.PatientResultsApiTest.testPatientResultsPatientId(PatientResultsApiTest.java:29)
+
+[INFO] Running com.resultcopy.rest.model.BabyResultTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.resultcopy.rest.model.BabyResultTest
+[INFO] Running com.resultcopy.rest.model.CategoryPostResultTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.resultcopy.rest.model.CategoryPostResultTest
+[INFO] Running com.resultcopy.rest.model.CategoryPostTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in com.resultcopy.rest.model.CategoryPostTest
+[INFO] Running com.resultcopy.rest.model.CategoryTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.rest.model.CategoryTest
+[INFO] Running com.resultcopy.rest.model.ChildTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.resultcopy.rest.model.ChildTest
+[INFO] Running com.resultcopy.rest.model.PatientDetailsTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in com.resultcopy.rest.model.PatientDetailsTest
+[INFO] Running com.resultcopy.rest.model.PatientResultTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.resultcopy.rest.model.PatientResultTest
+[INFO] Running com.resultcopy.rest.model.PatientTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.resultcopy.rest.model.PatientTest
+[INFO] Running com.resultcopy.rest.model.ResultTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.resultcopy.rest.model.ResultTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   CopyResultsApiTest.testCopyResultsPost:50 » Runtime Error connecting to the da...
+[ERROR]   PatientResultsApiTest.testPatientResultsPatientId:29 » Runtime Error connectin...
+[ERROR]   CopyResultsApiServiceImplTest.testCopyResultsPost:50 » Runtime Error connectin...
+[INFO] 
+[ERROR] Tests run: 93, Failures: 0, Errors: 3, Skipped: 0
+[INFO] 
+[ERROR] There are test failures.
+
+Please refer to C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\target\surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[JENKINS] Recording test results
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ result-copy-rest ---
+[INFO] Building jar: C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\target\result-copy-rest-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ result-copy-rest ---
+[INFO] Installing C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\target\result-copy-rest-1.0-SNAPSHOT.jar to C:\Windows\system32\config\systemprofile\.m2\repository\com\cerner\wh\result-copy-rest\1.0-SNAPSHOT\result-copy-rest-1.0-SNAPSHOT.jar
+[INFO] Installing C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\pom.xml to C:\Windows\system32\config\systemprofile\.m2\repository\com\cerner\wh\result-copy-rest\1.0-SNAPSHOT\result-copy-rest-1.0-SNAPSHOT.pom
 Started calculate disk usage of build
 Finished Calculation of disk usage of build in 0 seconds
 Started calculate disk usage of workspace
@@ -354,7 +388,7 @@ Finished Calculation of disk usage of workspace in 0 seconds
 [INFO] Assembling webapp [result-copy-war] in [C:\jenkins\workspace\DEVACDMY-35436\result-copy-war\target\result-copy-war]
 [INFO] Processing war project
 [INFO] Copying webapp resources [C:\jenkins\workspace\DEVACDMY-35436\result-copy-war\src\main\webapp]
-[INFO] Webapp assembled in [404 msecs]
+[INFO] Webapp assembled in [449 msecs]
 [INFO] Building war: C:\jenkins\workspace\DEVACDMY-35436\result-copy-war\target\result-copy-war.war
 [INFO] 
 [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ result-copy-war ---
@@ -367,20 +401,20 @@ Finished Calculation of disk usage of workspace in 0 seconds
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary for result-copy 1.0-SNAPSHOT:
 [INFO] 
-[INFO] result-copy-rest ................................... SUCCESS [ 27.071 s]
-[INFO] result-copy ........................................ SUCCESS [  0.071 s]
-[INFO] result-copy-response ............................... SUCCESS [  6.580 s]
-[INFO] result-copy-service ................................ SUCCESS [  6.856 s]
-[INFO] result-copy-war Maven Webapp ....................... SUCCESS [  3.345 s]
+[INFO] result-copy ........................................ SUCCESS [  1.129 s]
+[INFO] result-copy-response ............................... SUCCESS [ 12.695 s]
+[INFO] result-copy-service ................................ SUCCESS [  7.582 s]
+[INFO] result-copy-rest ................................... SUCCESS [ 31.858 s]
+[INFO] result-copy-war Maven Webapp ....................... SUCCESS [  3.066 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  46.142 s
-[INFO] Finished at: 2021-07-07T13:10:33-05:00
+[INFO] Total time:  58.204 s
+[INFO] Finished at: 2021-07-08T02:47:44-05:00
 [INFO] ------------------------------------------------------------------------
 Waiting for Jenkins to finish collecting data
-[JENKINS] Archiving C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\pom.xml to org.example/result-copy-rest/1.0-SNAPSHOT/result-copy-rest-1.0-SNAPSHOT.pom
-[JENKINS] Archiving C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\target\result-copy-rest-1.0-SNAPSHOT.jar to org.example/result-copy-rest/1.0-SNAPSHOT/result-copy-rest-1.0-SNAPSHOT.jar
+[JENKINS] Archiving C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\pom.xml to com.cerner.wh/result-copy-rest/1.0-SNAPSHOT/result-copy-rest-1.0-SNAPSHOT.pom
+[JENKINS] Archiving C:\jenkins\workspace\DEVACDMY-35436\result-copy-rest\target\result-copy-rest-1.0-SNAPSHOT.jar to com.cerner.wh/result-copy-rest/1.0-SNAPSHOT/result-copy-rest-1.0-SNAPSHOT.jar
 [JENKINS] Archiving C:\jenkins\workspace\DEVACDMY-35436\result-copy-service\pom.xml to com.cerner.wh/result-copy-service/1.0-SNAPSHOT/result-copy-service-1.0-SNAPSHOT.pom
 [JENKINS] Archiving C:\jenkins\workspace\DEVACDMY-35436\result-copy-service\target\result-copy-service-1.0-SNAPSHOT.jar to com.cerner.wh/result-copy-service/1.0-SNAPSHOT/result-copy-service-1.0-SNAPSHOT.jar
 [JENKINS] Archiving C:\jenkins\workspace\DEVACDMY-35436\result-copy-war\pom.xml to com.cerner.wh/result-copy-war/1.0-SNAPSHOT/result-copy-war-1.0-SNAPSHOT.pom
